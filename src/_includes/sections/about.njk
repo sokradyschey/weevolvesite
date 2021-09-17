@@ -1,4 +1,11 @@
 {%- for about in collections.about -%}
-    <h2>{{ about.data.title }}</h2>
-    <div>{{about.templateContent | safe }}</div>
+<div class="col-sm-4">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title text-center">{{ about.data.title }}</h2>
+            {{about.templateContent | safe }}
+        </div>
+    </div>
+</div>
+
 {% endfor %}
